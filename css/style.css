@@ -96,3 +96,24 @@ ul li {
     background: #114B5F;
     color: #DAD4EF;
 }
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+#social-links p {
+    color:#DAD4EF;
+    margin-right: 10px;
+}
+.fb-share-button{
+    margin-left: 10px;
+}
+footer p {
+    color: #f45b69;
+}
+footer a {
+    color: #e4fde1;
+}

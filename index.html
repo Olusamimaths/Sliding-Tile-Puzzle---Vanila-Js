@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
@@ -9,26 +10,64 @@
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
     <title>Sliding Puzzle</title>
 </head>
+
 <body id="body" onload="setUp()">
-        <h1>Sliding Tile Puzzle</h1>
-        <div id="modal" class="hide">
-            <div id="header"><button id="closeBtn" onclick="hideModal()">x</button></div>
-            <h1 id="message">You won!</h1>
-            <button id="reset" onclick="setUp();hideModal()">Reset</button>
-        </div>
+    <h1>Sliding Tile Puzzle</h1>
+    <div id="modal" class="hide">
+        <div id="header"><button id="closeBtn" onclick="hideModal()">x</button></div>
+        <h1 id="message">You won!</h1>
+        <button id="reset" onclick="setUp();hideModal()">Reset</button>
+    </div>
     <div id="container">
         <ul>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </div>
 </body>
+
+<div id="social-links">
+   <p>Share with friends:</p> 
+    <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=Check out this sliding tile puzzle made with vanilla js"
+        data-size="large">
+        Tweet</a>
+    <div class="fb-share-button" data-href="https://olusamimaths.github.io/Sliding-Tile-Puzzle---Vanila-Js/"
+        data-layout="button_count" data-size="small"><a target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Folusamimaths.github.io%2FSliding-Tile-Puzzle---Vanila-Js%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore">Share</a></div>
+
+</div>
+
+<footer>
+    <p>Made with love by <a href="http://twiiter/solathecoder">Olusola</a> </p>
+</footer>
+
 <script src="js/script.js"></script>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
+<script>window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));</script>
+
 </html>
