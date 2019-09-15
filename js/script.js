@@ -1,10 +1,11 @@
 // select the container
-const ul = document.querySelectorAll('li');
+let ul = document.querySelectorAll('li');;
 let letters= ["A", "B", "C", "D", "E", "F", "G", "H", ""]
 let numbers = letters;
 const number_of_grid = 3;
 
 function setUp() {
+    removeDroppable(ul);
     // fill the grid with numbers
     fillGrid(ul, numbers);
     // get the content and dimension of the grid
@@ -80,7 +81,8 @@ const removeDroppable = (items) => {
             item.setAttribute("ondragover", "");
             item.setAttribute("draggable", "false");
             item.setAttribute("ondragstart", "");
-            item.setAttribute("ondragend", "")   
+            item.setAttribute("ondragend", "");
+            item.classList.remove("empty"); 
     })
 }
 const setDraggable = (items) => {
